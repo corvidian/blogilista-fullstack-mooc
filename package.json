@@ -1,0 +1,32 @@
+{
+  "name": "blogilista",
+  "version": "1.0.0",
+  "description": "Exercises for https://fullstackopen.com/osa4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corvidian/blogilista-fullstack-mooc.git"
+  },
+  "author": "Topias Heinonen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/corvidian/blogilista-fullstack-mooc/issues"
+  },
+  "homepage": "https://github.com/corvidian/blogilista-fullstack-mooc#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0"
+  }
+}
