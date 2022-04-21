@@ -74,3 +74,17 @@ describe("total likes", () => {
     expect(listHelper.totalLikes(blogs)).toBe(36);
   });
 });
+
+describe("favotite blog", () => {
+  test("of empty list is undefined", () => {
+    expect(listHelper.favoriteBlog([])).toBe(undefined);
+  });
+
+  test("when list has only one blog returns that", () => {
+    expect(listHelper.favoriteBlog(listWithOneBlog)).toBe(listWithOneBlog[0]);
+  });
+
+  test("of a bigger list is the one with the most likes", () => {
+    expect(listHelper.favoriteBlog(blogs)).toBe(blogs[2]);
+  });
+});
